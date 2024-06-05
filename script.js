@@ -1,4 +1,5 @@
-const endDate = '16 January 2025 12:00 AM'
+const endDate = new Date()
+const from = '10 may 2024'
 
 const inputs = document.querySelectorAll('input')
 const date = document.querySelector('.date')
@@ -8,7 +9,7 @@ date.innerText = endDate
 
 function clock() {
     const end = new Date(endDate)
-    const now = new Date()
+    const now = new Date(from)
     const diff = (end - now) / 1000;
 
     if (diff < 0) return;

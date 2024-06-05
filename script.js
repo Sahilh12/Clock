@@ -1,10 +1,10 @@
-const endDate = new Date()
+let endDate = new Date()
 const from = '10 may 2024'
 
 const inputs = document.querySelectorAll('input')
 const date = document.querySelector('.date')
 
-date.innerText = endDate
+date.innerText = `${new Date().getDate()} - ${new Date().getMonth()} - ${new Date().getFullYear()}`
 
 
 function clock() {
@@ -25,6 +25,7 @@ clock()
 
 setInterval(
     () => {
+        endDate = new Date()
         clock()
     },
     1000

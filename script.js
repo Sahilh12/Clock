@@ -1,5 +1,5 @@
 let endDate = new Date()
-const from = '10 may 2024'
+const from = '10 april 2024'
 
 const inputs = document.querySelectorAll('input')
 const date = document.querySelector('.date')
